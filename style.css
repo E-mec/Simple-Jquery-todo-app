@@ -1,0 +1,62 @@
+body{
+    background: #504f4f;
+    margin-top: 150px;
+}
+
+.container {
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: rgb(202,241,239);
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px 3px rgb(54,54,54);
+}
+
+form {
+    display: inline-block;
+}
+
+input{
+    padding: 4px 15px 4px 5px;
+}
+
+#button {
+    display: inline-block;
+    background-color: #0f12dd;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 2px;
+    padding: 5px 15px ;
+}
+
+#button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+ul{
+    padding-left: 20px;
+    font-weight: bolder;
+}
+
+ul li {
+    padding:5px;
+    color: rgb(5, 5, 5);
+    font-weight: bolder;
+}
+
+ul li:nth-child(even){
+    background-color: #524f4f;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.strike{
+    text-decoration: line-through;
+}
+
+li:hover{
+    cursor: pointer;
+}
