@@ -2,9 +2,14 @@ $('document').ready(()=>{
 
 $('#button').click(
     function(){
-    var toAdd = $('input[name=ListItem]').val();
-    $('ul').append('<li>'+toAdd+'</li>');
-    // $('input[name=ListItem]').val('')
+    var toAdd = $('input[name=ListItem]').val().trim();
+    if (toAdd != '') {
+        $('ul').append('<li>'+toAdd+'</li>');
+        $('input[name=ListItem]').val('');
+    }else{
+        alert('Please enter a value');
+    }
+    
 }
 )
 
@@ -13,7 +18,7 @@ $(document).on('dblclick','li',function () {
 })
 
 $('input').focus(function(){
-    $(this).val(' ');
+    $(this).val('');
 })
 
 $('ul').sortable();
